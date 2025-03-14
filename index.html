@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Ti</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .carta {
+            background: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            border: 5px solid #8b5e3c;
+        }
+        h1 {
+            color: #6d4c41;
+            font-size: 26px;
+        }
+        p {
+            font-size: 18px;
+            color: #4e342e;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 10px 0;
+        }
+        .boton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #8b5e3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            font-family: 'Georgia', serif;
+        }
+        .boton:hover {
+            background: #6d4c41;
+        }
+        .sobre {
+            width: 120px;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Sobre" class="sobre" onclick="mostrarCarta()">
+    <div class="carta" id="carta">
+        <h1>Para Mi Adita</h1>
+        <p>Ada, sé que en este tiempo te he fallado más de lo que querría y yo mismo me arrepiento de todo lo que te he dicho.</p>
+        <p>En todo este tiempo sin poder hablar contigo he visto que dependía mucho de ti, ya que gracias a ti mi vida tenía un sentido y era estar contigo.</p>
+        <p>He sido muy pesado intentando de alguna forma que me perdonaras, escribiendo cualquier cosa solo para que me hicieras caso, me quedaba embobado en los partidos solo mirándote a ti.</p>
+        <p>Sé que querías una carta, no es física, pero mi intención es expresarte que te quiero y que no quiero estar con ninguna otra. Si te pedía una respuesta y por impaciente la he cagado, es porque me cuesta no poder hablar contigo cada día.</p>
+        <p>La verdad, no veo sentido a una vida sin poder estar contigo y espero que algún día me puedas perdonar, porque no quiero estar con nadie más que contigo.</p>
+        <button class="boton">Te Quiero ❤️</button>
+    </div>
+
+    <script>
+        function mostrarCarta() {
+            document.getElementById("carta").style.opacity = "1";
+            document.getElementById("carta").style.transform = "scale(1)";
+        }
+    </script>
+</body>
+</html>
